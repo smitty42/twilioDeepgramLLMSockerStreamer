@@ -17,12 +17,11 @@ Key features of this project include:
 To set up and run this project locally, follow the steps below:
 
 ### Prerequisites
-1. **Install UV**: Install UV Python package manager if you don't already have it: [Download UV](https://docs.astral.sh/uv/getting-started/installation/)
-2. **Install Ngrok**: Install Ngrok if you don't already have it: [Download Ngrok](https://ngrok.com/downloads)
-3. **Pip**: Python's package manager should also be installed.
-4. **Twilio Account**: Sign up for a Twilio account and obtain your account SID and authentication token.
-5. **Deepgram API Key**: Sign up for Deepgram and obtain an API key.
-6. **Anthropic API Key**: Obtain an API key for Anthropic's language model.
+**Install UV**: Install UV Python package manager if you don't already have it: [Download UV](https://docs.astral.sh/uv/getting-started/installation/)
+**Install Ngrok**: Install Ngrok if you don't already have it: [Download Ngrok](https://ngrok.com/downloads)
+**Twilio Account**: Sign up for a Twilio account and obtain your account SID and authentication token.
+**Deepgram API Key**: Sign up for Deepgram and obtain an API key.
+**Anthropic API Key**: Obtain an API key for Anthropic's language model.
 
 Check the .flaskenv.template for configuring up API keys.
 
