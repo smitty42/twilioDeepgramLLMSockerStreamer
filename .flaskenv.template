@@ -1,0 +1,19 @@
+# Template for .flaskenv file
+# Copy to .flaskenv and modify values as appropriate
+
+FLASK_APP=run.py
+FLASK_DEBUG=1
+FLASK_CONFIG=dev
+
+REMEMBER_COOKIE_HTTPONLY=True
+SESSION_COOKIE_SAMESITE=Lax
+
+TWILIO_ACCOUNT_SID=""
+TWILIO_AUTH_TOKEN=""
+
+ANTHROPIC_API_KEY=""
+
+DEEPGRAM_API_KEY=""
+
+LOG_LEVEL=20 # INFO
+NGROK=""
