@@ -27,31 +27,31 @@ To set up and run this project locally, follow the steps below:
 Check the .flaskenv.template for configuring up API keys.
 
 ### Steps
-** Clone the repository:
+* Clone the repository:
    ```bash
    git clone https://github.com/smitty42/twilioDeepgramLLMSockerStreamer.git
    cd twilioDeepgramLLMSockerStreamer
    ```
 
-** Install deps:
+* Install deps:
    ```bash
    uv sync
    ```
 
-** Run Ngrok in a separate terminal
+* Run Ngrok in a separate terminal
     ```bash
     ngrok http 127.0.0.1:5000
     ```
 
-** Setup config - copy .flaskenv.template to .flaskenv and fill out variable. This includes API keys and your ngrok link. You're Ngrok session url needs to go into .flaskenv AND into the twilio answer field for the number you're using with a suffix of `/answer`.
+* Setup config - copy .flaskenv.template to .flaskenv and fill out variable. This includes API keys and your ngrok link. You're Ngrok session url needs to go into .flaskenv AND into the twilio answer field for the number you're using with a suffix of `/answer`.
 
-** Activate your env:
+* Activate your env:
    ```bash
    source .venv/bin/activate
 
-** Run the Flask server:
+* Run the Flask server:
    ```bash
    flask run
    ```
 
-** Now, simply call your twilio number. 
+* Now, simply call your twilio number. 
