@@ -17,34 +17,34 @@ Key features of this project include:
 To set up and run this project locally, follow the steps below:
 
 ### Prerequisites
-**Install UV**: Install UV Python package manager if you don't already have it: [Download UV](https://docs.astral.sh/uv/getting-started/installation/)
-**Install Ngrok**: Install Ngrok if you don't already have it: [Download Ngrok](https://ngrok.com/downloads)
-**Twilio Account**: Sign up for a Twilio account and obtain your account SID and authentication token.
-**Deepgram API Key**: Sign up for Deepgram and obtain an API key.
-**Anthropic API Key**: Obtain an API key for Anthropic's language model.
+- **Install UV**: Install UV Python package manager if you don't already have it: [Download UV](https://docs.astral.sh/uv/getting-started/installation/)
+- **Install Ngrok**: Install Ngrok if you don't already have it: [Download Ngrok](https://ngrok.com/downloads)
+- **Twilio Account**: Sign up for a Twilio account and obtain your account SID and authentication token.
+- **Deepgram API Key**: Sign up for Deepgram and obtain an API key.
+- **Anthropic API Key**: Obtain an API key for Anthropic's language model.
 
 Check the .flaskenv.template for configuring up API keys.
 
 ### Steps
-* Clone the repository:
+- Clone the repository:
    ```bash
    git clone https://github.com/smitty42/twilioDeepgramLLMSockerStreamer.git
    cd twilioDeepgramLLMSockerStreamer
    ```
 
-* Install deps:
+- Install deps:
    ```bash
    uv sync
    ```
 
-* Run Ngrok in a separate terminal
+- Run Ngrok in a separate terminal
     ```bash
     ngrok http 127.0.0.1:5000
     ```
+    
+- Setup config - copy .flaskenv.template to .flaskenv and fill out variable. This includes API keys and your ngrok link. You're Ngrok session url needs to go into .flaskenv AND into the twilio answer field for the number you're using with a suffix of `/answer`.
 
-* Setup config - copy .flaskenv.template to .flaskenv and fill out variable. This includes API keys and your ngrok link. You're Ngrok session url needs to go into .flaskenv AND into the twilio answer field for the number you're using with a suffix of `/answer`.
-
-* Activate your env:
+- Activate your env:
    ```bash
    source .venv/bin/activate
 
@@ -53,4 +53,4 @@ Check the .flaskenv.template for configuring up API keys.
    flask run
    ```
 
-* Now, simply call your twilio number. 
+- Now, simply call your twilio number. 
