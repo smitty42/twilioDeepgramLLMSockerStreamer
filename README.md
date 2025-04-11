@@ -37,12 +37,17 @@ Check the .flaskenv.template for configuring up API keys.
    uv sync
    ```
 
-- Run Ngrok in a separate terminal
+- Run Ngrok in a separate terminal:
     ```bash
     ngrok http 127.0.0.1:5000
     ```
     
-- Setup config - copy .flaskenv.template to .flaskenv and fill out variable. This includes API keys and your ngrok link. You're Ngrok session url needs to go into .flaskenv AND into the twilio answer field for the number you're using with a suffix of `/answer`.
+- Setup config:
+  ```bash
+  cp .flaskenv.template .flaskenv
+  ```
+
+Copy .flaskenv.template to .flaskenv and fill out envvars. This includes API keys and your ngrok link. Your Ngrok session url needs to go into .flaskenv AND into the twilio answer field for the number you're using with a suffix of `/answer`. The `/answer` suffix goes ONLY in the twilio answer hook for the twilio phone number.
 
 - Activate your env:
    ```bash
