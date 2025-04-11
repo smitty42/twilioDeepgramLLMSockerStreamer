@@ -59,3 +59,8 @@ Check the .flaskenv.template for configuring up API keys.
    ```
 
 - Now, simply call your twilio number. 
+
+
+I'm using Anthropic here for the LLM, but this can be trivially changed out for the LLM of your choice with minor modification to the `prompt_llm` function and adding your own API wrapper similar to the one in `anthropic_api.py`. The hardest part would probably be sorting out the authentication for whever other LLM you're using, which is to say, it's not that hard.
+
+Check the `system` variable in `anthropic_api.py` to configure the role for your voice agent.
